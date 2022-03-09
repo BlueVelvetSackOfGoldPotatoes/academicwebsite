@@ -20,10 +20,10 @@ body {
     margin-bottom: 10px;
     padding: 1px;
     font-size: 1em;
-    color: #dc143c;
-    border: 2px solid #dc143c;
-    box-shadow: -2px 0px #dc143c;
-    text-shadow: -2px 0px #dc143c;
+    color: #e71e07;
+    border: 2px solid #e71e07;
+    box-shadow: -2px 0px #e71e07;
+    text-shadow: -2px 0px #e71e07;
 }
 
 #overview h2, #hobbies h2, #personal h2, #contact h2{
@@ -33,12 +33,12 @@ body {
 }
 
 #banner {
-    background-color: #dc143c;
+    background-color: #e71e07;
     margin: 0;
     width: 100%;
     top: 0;
     border: 4px solid #444;
-    box-shadow: -2px 0px #dc143c;
+    box-shadow: -2px 0px #e71e07;
 }
 
 #banner h1{
@@ -46,7 +46,7 @@ body {
   font-size: 3em;
   font-style: bold;
   text-transform: uppercase;
-  text-shadow: -5px 0px #dc143c;
+  text-shadow: -5px 0px #e71e07;
   padding: .2em;
   margin-bottom: 0;
 }
@@ -55,12 +55,12 @@ nav{
   background: #444;
   padding: 0;
   border: 4px solid #444;
-  box-shadow: -2px 0px #dc143c;
+  box-shadow: -2px 0px #e71e07;
 }
 
 nav li{
   display: inline;
-  background: #dc143c;
+  background: #e71e07;
   margin: .5em;
   padding: 0em;
 }
@@ -71,7 +71,7 @@ nav a {
   border: 1px solid white;
   font-weight: bold;
   padding: .5em;
-  background: #dc143c;
+  background: #e71e07;
 }
 
 a:hover{
@@ -87,11 +87,11 @@ a:hover{
 
 #contact a{
   text-decoration: none;
-  color: #dc143c;
+  color: #e71e07;
 }
 
 #contact a:hover{
-  color: #9C27B0;
+  color: #80DEEA;
 }
 
 footer{
@@ -106,9 +106,9 @@ footer a{
   display: inline;
   margin: .5em;
   padding: .5em;
-  border: 1px solid red;
+  border: 1px solid #e71e07;
 }
 
 footer a:hover{
-  color: #9C27B0;
+  color: #80DEEA;
 }
