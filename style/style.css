@@ -37,12 +37,12 @@ body {
     margin: 0;
     width: 100%;
     top: 0;
-    border: 4px solid #444;
+    border: 4px solid #faebd7;
     box-shadow: -2px 0px #e71e07;
 }
 
 #banner h1{
-  color: white;
+  color: #faebd7;
   font-size: 3em;
   font-style: bold;
   text-transform: uppercase;
@@ -52,9 +52,9 @@ body {
 }
 
 nav{
-  background: #444;
+  background: #faebd7;
   padding: 0;
-  border: 4px solid #444;
+  border: 4px solid #faebd7;
   box-shadow: -2px 0px #e71e07;
 }
 
@@ -67,8 +67,8 @@ nav li{
 
 nav a {
   text-decoration: none;
-  color: white;
-  border: 1px solid white;
+  color: #faebd7;
+  border: 1px solid #faebd7;
   font-weight: bold;
   padding: .5em;
   background: #e71e07;
@@ -82,6 +82,7 @@ a:hover{
   border: 1px solid black;
   padding: 40px;
   margin: 20px;
+  color: black;
   box-shadow: 0px 0px 50px 6px #444;
 }
 
@@ -91,11 +92,12 @@ a:hover{
 }
 
 #contact a:hover{
-  color: #80DEEA;
+  background-color: #80DEEA;
 }
 
 footer{
   background: #faebd7;
+  color: black;
   padding: 0;
 }
 
@@ -110,5 +112,5 @@ footer a{
 }
 
 footer a:hover{
-  color: #80DEEA;
+  background-color: #80DEEA;
 }
