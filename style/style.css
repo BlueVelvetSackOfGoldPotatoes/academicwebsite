@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .inactiveLink {
   pointer-events: none;
   cursor: default;
@@ -11,54 +15,75 @@ body {
     margin: 0;
     font-size: 1em;
     font-weight: normal;  
-    font-family: Montserrat, arial, helvetica, sans-serif;
-    background: #faebd7;
+    font-family: sans-serif;
+    background: #009cda;
+}
+
+.page {
+  min-height: 100vh;
+  position: relative;
+  background-color: #009cda;
+  text-align: center;
+  padding: 0rem 5rem;
+}
+
+.page:not(:first-child) {
+  padding-top: 14rem;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
  header {
-    background: #faebd7;
+    border-radius: 25px;
+    background: #fcd000;
     margin-bottom: 10px;
     padding: 1px;
     font-size: 1em;
     color: #e71e07;
-    border: 2px solid #e71e07;
-    box-shadow: -2px 0px #e71e07;
-    text-shadow: -2px 0px #e71e07;
+    border: 2px solid white;
 }
 
-#overview h2, #hobbies h2, #personal h2, #contact h2{
+#overview h2, #experience h2, #hobbies h2, #personal h2, #contact h2{
+  border-radius: 25px;
+  background: #009cda;
   font-weight: bold;
   margin: .3em;
   margin-bottom: 0;
 }
 
 #banner {
-    background-color: #e71e07;
+    border-radius: 25px;
+    background-color: #fcd000;
     margin: 0;
     width: 100%;
     top: 0;
-    border: 4px solid #faebd7;
-    box-shadow: -2px 0px #e71e07;
+    border: 4px solid #fcd000;
 }
 
 #banner h1{
-  color: #faebd7;
+  border-radius: 25px;
+  color: white;
   font-size: 3em;
   font-style: bold;
   text-transform: uppercase;
-  text-shadow: -5px 0px #e71e07;
   padding: .2em;
   margin-bottom: 0;
 }
 
 nav{
-  background: #faebd7;
+  background: #fcd000;
   padding: 0;
-  border: 4px solid #faebd7;
-  box-shadow: -2px 0px #e71e07;
+  border: 4px solid white;
 }
 
 nav li{
+  border-radius: 25px;
   display: inline;
   background: #e71e07;
   margin: .5em;
@@ -66,24 +91,25 @@ nav li{
 }
 
 nav a {
+  border-radius: 25px;
   text-decoration: none;
-  color: #faebd7;
-  border: 1px solid #faebd7;
+  color: white;
+  border: 1px solid white;
   font-weight: bold;
   padding: .5em;
   background: #e71e07;
 }
 
 a:hover{
-  background-color: #80DEEA;
+  background-color: white;
 }
 
 #overview, #hobbies, #experience, #contact{
-  border: 1px solid black;
+  border-radius: 25px;
+  border: 1px solid #fcd000;
   padding: 40px;
   margin: 20px;
-  color: black;
-  box-shadow: 0px 0px 50px 6px #444;
+  color: white;
 }
 
 #contact a{
@@ -92,25 +118,28 @@ a:hover{
 }
 
 #contact a:hover{
-  background-color: #80DEEA;
+  background-color: white;
 }
 
 footer{
-  background: #faebd7;
-  color: black;
+  border-radius: 25px;
+  background: #fcd000;
+  color: white;
   padding: 0;
 }
 
 footer a{
-  font-family: Montserrat, arial, helvetica, sans-seriff;
+  border-radius: 25px;
+  font-family: sans-seriff;
   text-decoration: none;
-  color: black;
+  color: white;
   display: inline;
   margin: .5em;
   padding: .5em;
-  border: 1px solid #e71e07;
+  border: 1px solid #fcd000;
 }
 
 footer a:hover{
-  background-color: #80DEEA;
+  color: white;
+  background-color: #42b132;
 }
