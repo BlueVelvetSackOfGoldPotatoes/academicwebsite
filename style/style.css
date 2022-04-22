@@ -39,11 +39,12 @@ body {
 }
 
 #banner {
-    border-radius: 25px;
-    background-color: #fcd000;
-    margin: 0;
-    width: 100%;
-    top: 0;
+  padding-top: 5%;
+  border-radius: 25px;
+  background-color: #fcd000;
+  margin: 0;
+  width: 100%;
+  top: 0;
 }
 
 #banner h1{
@@ -55,6 +56,36 @@ body {
   text-transform: uppercase;
   padding: .2em;
   margin-bottom: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background: #e71e07;
+  left: 0;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  background: #e71e07;
+  margin: .5em;
+  padding: 0em;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: .5em;
+  background: #e71e07;
+}
+
+a:hover{
+  border-radius: 25px;
+  background-color: #42b132;
+  color: white;
+  border: 1px solid white;
 }
 
 /* the text like "who i am" */
@@ -72,30 +103,6 @@ header {
   font-weight: bold;
   margin: .3em;
   margin-bottom: 0;
-}
-
-
-nav li {
-  border-radius: 25px;
-  display: inline;
-  background: #e71e07;
-  margin: .5em;
-  padding: 0em;
-}
-
-nav a {
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: .5em;
-  background: #e71e07;
-}
-
-a:hover{
-  background-color: #42b132;
-  color: white;
-  border: 1px solid white;
 }
 
 #overview, #hobbies, #experience, #contact{
