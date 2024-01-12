@@ -1,92 +1,616 @@
-
 <!DOCTYPE html>
-
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Gonçalo Hora de Carvalho</title>
-
+  <title>GHC Website</title>
   <link rel="stylesheet" type="text/css" href='style/style.css'>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</head>
 </head>
 
-<header id="banner">
-  <h1> Gonçalo Hora de Carvalho
-</h1>
-<nav id="intro">
-  <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#hobbies">Hobbies</a></li>
-    <li><a href="#contact">Get In Touch</a></li>
-  </ul>
-</nav>
-</header>
-<main>
-  <article id="overview">
-    <header>
-      <h2>Who I Am</h2>
-    </header>
-    <p>Hey, my name is Gonçalo. I am currently the head of an engineering team that builds Machine Learning applications at Pennie Solutions - a startup based in Groningen. I also work for an AI research group in Island, IIIM (Icelandic Institute for Intelligent Machines) as an AI researcher. I program, develop
-data analysis pipelines and build models for clients following the consultancy tradition. I am also studying AI as my MSc at RUG, the Netherlands (I have a BSc of Science in AI). </p>
-  </article>
-   <article id="experience">
-    <header>
-      <h2>Experience</h2>
-    </header>
-     <h3>Present</h3>
-<p>Machine Learning Engineering Team Lead
-  Pennie Solutions, The Netherlands.</p>
-<p>AI researcher for IIIM, Iceland.</p>
-<h3>2016 - 2017</h3>
-<p>Delivery of services - collection of statistical data
-Wisdom , Lisboa (Portugal).</p>
-<h3>2019 - 2020</h3>
-<p>VSNU University NL groups think tank
-Qualitative and quantitative research project for the VSNU Kennistafel Knowledge Table:
-on the current state of affairs regarding AI studies in higher education in the Netherlands.</p>
-<p>Teaching assistant for Autonomous Systems in the BSc of AI at RUG, University of
-Groningen the Netherlands.</p>
-<p>Front-end developer at Belsimpel, Groningen, the Netherlands.</p>
-<p>Commissioner of Educational Affairs for Study Association
-Groningen university, Student association of AI/CS/Cog</p>
-<h3>2020 - 2021</h3>
-<p>Machine Learning Internship in Cardiology Department - Academic Research at UMCG hospital</p>
-<p>Teaching assistant for Cognitive Psychology in the BSc of AI at RUG, University of Groningen the Netherlands.</p>
-<p>Teaching assistant for Machine Learning applied Biomedical Engineering</p>
-<p>Teaching assistant for DASH summer school (https://bit.ly/32pERt5).</p>
-<p>Teaching assistant for Amsterdam UMC: translating Machine Learning algorithms from
-Matlab to Python (Contribution to Delft’s PRTools: https://bit.ly/3xbsvjk).</p>
-  </article>
-  <article id="hobbies">
-    <header>
-      <h2>Hobbies</h2>
-    </header>
-    <p>I was editor and head of content for the COVER magazine, Groningen University
-study Association for Artiﬁcial Intelligence, Computer Science and Computational
-Cognitive Science (MSc and BSc) students, where I wrote several articles. I also
-write for other student magazines and journals. At COVER, I fostered key events
-that had an average attendance of 50 people. One such event was the ‘COVER-
-Talks’, where I invited and spoke to experts of different ﬁelds (e.g. Joscha Bach -
-Cognitive Science PhD, and Stephen Wolfram - Physicist and Computer Scientist).
-Another example of a successful plan was the ‘BootCamps’, where experts were
-invited to teach students extracurricular skills (e.g. studying effectively, and mental health during Covid-19). A hackathon co-organized with AIMED - association
-for AI and Medical students of Groningen, consisting in the exploratory analysis
-of two large Covid-19 related datasets by multidisciplinary teams of Medical research MSc students, Artiﬁcial Intelligence and Computer Science MSc students.
-I wrote the example notebooks for the competition (https://bit.ly/3x9Bceh). I also
-co-organized a symposium on accountability, responsibility and transparency in
-Computer Science and AI (Covers A.R.T. Symposium) featuring digital security expert and Wikileaks co-creator Daniel Domscheit-Berg.</p>
-  </article>
-  <article id="contact">
-    <header>
-      <h2>Get In Touch</h2>
-    </header>
-    <ul>
-      <li>goncalo.horacarvalho@gmail.com</li>
-      <li>https://github.com/BlueVelvetSackOfGoldPotatoes</li>
-    </ul>
-  </article>
-</main>
-<footer>
-  <p>&copy;Copyright Gonçalo Hora de Carvalho, all rights reserved.</p>
-  <p><a href="#overview">Return to Top</a></p>
-</footer>
+<body>
+  <header id="banner">
+    <h1>GHC Website</h1>
+    <nav id="menu">
+      <ul>
+        <li>
+          <a href="#articles">Articles</a>
+          <ul class="dropdown">
+            <li><a href="#lego">LEGO Connect Language</a></li>
+            <li><a href="#U"> \( U_i \)</a></li>
+            <li><a href="#CEF">CEF</a></li>
+            <li><a href="#Viral_Fungal">Viral & Fungal based ANNs</a></li>
+
+            <!-- Add other article links here -->
+          </ul>
+        </li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="blog">
+      <header><h2>Blog</h2></header>
+      <p>Content for Blog section.</p>
+    </article>
+
+    <article id="about">
+      <header><h2>About</h2></header>
+      <p>Content for About section.</p>
+    </article>
+
+    <article id="articles">
+      <header><h1>Articles</h1></header>
+      <article id="lego">
+        <header><h3 style="text-align: center;">LEGO Connect Language (LCL): A Textual Approach to LEGO Assembly</h3></header>
+
+         <h2>Overview</h2>
+          Building LEGO sets typically relies on visual instructions. The LEGO Connect Language (LCL) offers an alternative by providing a structured, textual approach to LEGO assembly, making the process accessible and verifiable through a systematic method.
+
+          The LEGO Connect Language (LCL) offers a structured, textual approach to assembling LEGO sets. Understanding its components is crucial for its effective use.
+
+         <h2>Understanding LCL Syntax</h2>
+          LCL instructions combine the above components to guide the assembly process. For example, "S1: PID: 3001, O: N-U, CP: [(1,1), (1,2)], A: Attach" instructs to attach a piece with PID 3001, oriented north-up, at position of the first two holes as the first step.
+
+          <h2>LCL Syntax and Semantics</h2>
+          <p>LCL comprises several elements:</p>
+          <ol>
+              <li><strong>Piece Identification (PID):</strong> An alphanumeric code for each LEGO piece.</li>
+              <li><strong>Orientation (O):</strong> Denotes the piece's orientation using compass directions and vertical alignment.</li>
+              <li><strong>Connection Point (CP):</strong> Grid coordinates on the base piece for attachment.</li>
+              <li><strong>Action (A):</strong> The action to be performed, like attaching or pressing.</li>
+              <li><strong>Sequence (S):</strong> A numerical order of construction steps.</li>
+          </ol>
+
+          <h2>Encoding Process</h2>
+          The encoding algorithm transforms visual instructions into LCL format, involving piece recognition, orientation detection, connection mapping, and sequential ordering.
+
+          <h2>Decoding and Verification</h2>
+          The decoder validates the built model against LCL instructions, involving step-by-step comparison and mismatch identification.
+
+          <h2>Formalization</h2>
+          We define a LEGO piece in LCL as \( L = (PID, O, CP, A, S) \). Given LCL instructions \( \mathcal{I} = \{L_1, L_2, ..., L_n\} \) and a user's build sequence \( \mathcal{U} = \{U_1, U_2, ..., U_m\} \), the decoder function \( D(\mathcal{I}, \mathcal{U}) \) identifies mismatches \( \mathcal{M} \):
+
+          \[ D(\mathcal{I}, \mathcal{U}) = \{i \mid L_i \in \mathcal{I}, U_i \in \mathcal{U}, L_i \neq U_i \} \]
+
+          The objective is minimizing \( |\mathcal{M}| \), where an empty set signifies a perfect match.
+
+          <h2>Example</h2>
+          <ul>
+            <li>{'PID': '3040', 'O': 'N-U', 'CP': ['(1,1)'], 'A': 'Attach', 'S': 1},</li>
+            <li>{'PID': '3039', 'O': 'S-U', 'CP': ['(1,2)', '(1,3)'], 'A': 'Attach', 'S': 2},</li>
+            <li>{'PID': '3660', 'O': 'E-D', 'CP': ['(2,1)', '(2,2)'], 'A': 'Attach', 'S': 3},</li>
+            <li>{'PID': '3002', 'O': 'W-U', 'CP': ['(2,3)'], 'A': 'Attach', 'S': 4},</li>
+            <li>{'PID': '3022', 'O': 'N-U', 'CP': ['(1,4)'], 'A': 'Attach', 'S': 5},</li>
+            <li>{'PID': '3004', 'O': 'S-U', 'CP': ['(2,4)'], 'A': 'Attach', 'S': 6},</li>
+        </ul>
+
+          <h2>Dataset</h2>
+          <h3>Example prompt</h3>
+          Welcome to the LEGO Connect Language (LCL), a structured, textual approach designed to facilitate the assembly of LEGO sets using precise instructions. LCL translates the typically visual process of LEGO building into a clear and systematic textual format. Here's how you can understand and use LCL effectively: Piece Identification (PID): This is an alphanumeric code uniquely assigned to each LEGO piece based on its shape, size, and type. For example, a 2x4 LEGO brick may have a PID like 3001. Orientation (O): It indicates how the piece should be oriented during assembly, using compass directions (N, S, E, W) and vertical alignment (U for up, D for down). For instance, N-U means the piece should be oriented with its longer side facing north and studs facing up. Connection Point (CP): This specifies where on the base piece the next piece should be attached, using grid coordinates such as [(1,1), (1,3)], etc. Action (A): Describes the action to be performed with the piece, such as Attach, Press, or Slide. Sequence (S): A numerical order indicating the step in the building process, like S1, S2, S3, etc. An LCL instruction is a combination of the above components. For example, S1: PID: 3001, O: N-U, CP: A1, A: Attach is an instruction telling you to take a piece with PID 3001, orient it with its longer side facing north and studs up, and attach it at position A1 as the first step in the assembly. Example: 
+          <ol>
+              <li>Step 1: Attach piece with PID 3040, Orient it with N-U, Connect at position (1,1)</li>
+              <li>Step 2: Attach piece with PID 3039, Orient it with S-U, Connect at positions (1,2) and (1,3)</li>
+              <li>Step 3: Attach piece with PID 3660, Orient it with E-D, Connect at positions (2,1) and (2,2)</li>
+              <li>Step 4: Attach piece with PID 3002, Orient it with W-U, Connect at position (2,3)</li>
+              <li>Step 5: Attach piece with PID 3022, Orient it with N-U, Connect at position (1,4)</li>
+              <li>Step 6: Attach piece with PID 3004, Orient it with S-U, Connect at position (2,4)</li>
+          </ol>
+            <div id="json">
+
+            <h3>Apple</h3>
+            <p>Construct a LEGO apple with a mix of red and green colors, resembling a typical apple shape using slopes and bricks.</p>
+            <ul>
+                <li>Green Slope 45 2 x 1 - Code: 3040</li>
+                <li>Red Slope 45 2 x 2 - Code: 3039 (Quantity: 2)</li>
+                <li>Lime Slope, Inverted 45 2 x 2 - Code: 3660 (Quantity: 2)</li>
+                <li>Red Brick 2 x 3 - Code: 3002</li>
+                <li>Lime Plate 2 x 2 - Code: 3022</li>
+                <li>Lime Brick 1 x 2 - Code: 3004</li>
+            </ul>
+            <h3>Yellow Hut</h3>
+            <p>Build a sturdy hut with a purple and yellow color scheme, featuring a simple structure and a sloped roof.</p>
+            <ul>
+                <li>Trans-Clear Brick 1 x 2 without Bottom Tube - Code: 3065 (Quantity: 2)</li>
+                <li>Medium Nougat Brick 2 x 2 - Code: 3003</li>
+                <li>Lime Plate 2 x 6 - Code: 3795</li>
+                <li>Bright Light Yellow Brick 1 x 2 - Code: 3004 (Quantity: 4)</li>
+                <li>Bright Light Yellow Brick 2 x 2 - Code: 3003</li>
+                <li>Medium Lavender Slope 45 2 x 2 - Code: 3039 (Quantity: 4)</li>
+            </ul>
+            <h2>Fortress</h2>
+            <p>Create a medieval-themed LEGO fortress with arches, walls, and defensive structures, symbolizing a stronghold.</p>
+            <ul>
+                <li>Green Plate 2 x 8 - Code: 3034</li>
+                <li>Light Bluish Gray Arch 1 x 4 x 2 - Code: 6182 (Quantity: 2)</li>
+                <li>Sand Green Brick 1 x 2 - Code: 3004 (Quantity: 2)</li>
+                <li>Light Bluish Gray Brick 1 x 2 - Code: 3004 (Quantity: 2)</li>
+                <li>Dark Bluish Gray Brick 1 x 2 - Code: 3004 (Quantity: 2)</li>
+                <li>Light Bluish Gray Brick 2 x 2 - Code: 3003</li>
+                <li>Dark Purple Slope 45 2 x 1 - Code: 3040 (Quantity: 2)</li>
+                <li>Reddish Brown Brick, Round 1 x 1 Open Stud - Code: 3062b (Quantity: 2)</li>
+            </ul>
+            <h2>Dinghy</h2>
+            <p>Assemble a small LEGO dinghy with a white sail and a sturdy mast, designed for ocean adventures.</p>
+            <ul>
+                <li>Dark Tan Plate 2 x 4 - Code: 3020</li>
+                <li>Tan Slope, Inverted 33 3 x 2 with Flat Bottom Pin and Connections - Code: 3747b</li>
+                <li>White Slope 45 2 x 2 - Code: 3039 (Quantity: 3)</li>
+                <li>White Brick 2 x 2 - Code: 3003</li>
+                <li>White Brick 1 x 2 - Code: 3004</li>
+                <li>Tan Brick 2 x 3 - Code: 3002</li>
+                <li>Reddish Brown Brick, Round 2 x 2 with Axle Hole - Code: 3941</li>
+            </ul>
+            <h2>Blue Bot</h2>
+            <p>Construct a friendly-looking LEGO robot with a humanoid structure, featuring a distinguishable head, body, arms, and legs.</p>
+            <ul>
+                <li>Medium Blue Brick 2 x 2 - Code: 3003</li>
+                <li>Brick, Modified 2 x 3 with Curved Top - Code: 6215</li>
+                <li>Brick 2 x 4 - Code: 3001</li>
+                <li>Brick 1 x 2 - Code: 3004 (Quantity: 2)</li>
+                <li>Brick, Round 2 x 2 with Grille - Code: 92947</li>
+                <li>Plate 2 x 2 - Code: 3022</li>
+                <li>Brick, Modified 1 x 2 with Studs on 1 Side - Code: 11211</li>
+                <li>Brick 1 x 2 without Bottom Tube - Code: 3065</li>
+                <li>Tile 1 x 1 Round - Code: 98138</li>
+                <li>Brick, Round 2 x 2 Dome Top, with Bottom Axle Holder - Code: 553c</li>
+            </ul>
+            <h2>Toy Car</h2>
+            <p>Build a zippy, colorful LEGO toy car with a compact design, featuring wheels, a sloped windshield, and a streamlined look.</p>
+            <ul>
+                <li>Brick 2 x 6 - Code: 2456</li>
+                <li>Slope 2 x 2 45° - Code: 3039</li>
+                <li>Brick 1 x 2 without Bottom Tube - Code: 3065</li>
+                <li>Brick 1 x 2 - Code: 3004</li>
+                <li>Plate 2 x 2 with Wheel Holders - Code: 4600 (Quantity: 2)</li>
+                <li>Wheel 8mm D. x 6mm with Slot - Code: 34337 (Quantity: 4)</li>
+                <li>Tire Offset Tread Small - Band Around Center of Tread - Code: 87414 (Quantity: 4)</li>
+            </ul>
+            <h2>Goldfish</h2>
+            <p>Create a LEGO goldfish with fins and tail, featuring a colorful design and elements for eyes and detailed appearance.</p>
+            <ul>
+                <li>Brick 2 x 4 - Code: 3001 (Quantity: 2)</li>
+                <li>Brick 1 x 2 with Pin Hole - Code: 3700</li>
+                <li>Brick, Modified 1 x 2 with Studs on 1 Side - Code: 11211 (Quantity: 2)</li>
+                <li>Brick 2 x 3 - Code: 3002</li>
+                <li>Slope 45° 2 x 2 - Inverted - Code: 3660</li>
+                <li>Slope 2 x 1 - 45° - Code: 3040 (Quantity: 4)</li>
+                <li>Tile 1 x 1 Round with Eye Pattern - Code: 98138pb007 (Quantity: 2)</li>
+                <li>Slope 30° 1 x 2 x 2/3 - Code: 85984</li>
+            </ul>
+            <h2>Baby Elephant</h2>
+            <p>Assemble a LEGO baby elephant with a focus on its trunk, ears, and body structure, featuring a friendly and realistic appearance.</p>
+            <ul>
+                <li>Brick 2 x 6 - Code: 2456</li>
+                <li>Brick 1 x 2 - Code: 3004 (Quantity: 3)</li>
+                <li>Brick 1 x 4 - Code: 3010</li>
+                <li>Brick 1 x 1 with Stud on 1 Side - Code: 87087 (Quantity: 2)</li>
+                <li>Tile 1 x 1 Round with Eye Pattern - Code: 98138pb027 (Quantity: 2)</li>
+                <li>Brick 2 x 4 - Code: 3001</li>
+            </ul>
+            <h2>Flamingo</h2>
+            <p>Construct a LEGO flamingo with pink bricks, designed to stand on one leg and feature a long neck and beak.</p>
+            <ul>
+                <li>Brick 1 x 2 - Code: 3004 (Quantity: 3)</li>
+                <li>Brick, Modified 2 x 3 with Curved Top - Code: 6215 (Quantity: 2)</li>
+                <li>Brick 1 x 1 with Stud on 1 Side - Code: 87087 (Quantity: 2)</li>
+                <li>Plate 2 x 3 - Code: 3021</li>
+                <li>Slope 2 x 2- 45° - Code: 3039</li>
+                <li>Tile 1 x 1 Round with Eye Closed Pattern - Code: 98138pb028 (Quantity: 2)</li>
+            </ul>
+            <h2>Twin Engine Airplane</h2>
+            <p>Build a LEGO twin-engine airplane, with a streamlined body, wings, and a tail, suitable for various exploratory missions.</p>
+            <ul>
+                <li>Plate 2 x 8 - Code: 3034 (Quantity: 2)</li>
+                <li>Brick 1 x 2 x 2 with Inside Stud Holder - Code: 3245c</li>
+                <li>Brick, Modified 1 x 1 x 1 2/3 with Studs on 1 Side - Code: 32952 (Quantity: 2)</li>
+                <li>Brick 1 x 4 with 4 Studs on 1 Side - Code: 30414 (Quantity: 2)</li>
+                <li>Slope 2 x 2- 45° - Code: 3039</li>
+                <li>Brick 1 x 2 without Bottom Tube - Code: 3065</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      
+      <article id="CEF">
+        <header><h3 style="text-align: center;">Game-Theoretic Approach to Intelligence Measurement and Computational Efficiency Factor (CEF)</h3></header>
+          
+          This section extends the previous framework of intelligence measurement by incorporating a game-theoretic approach, linking it with the Computational Efficiency Factor (CEF) and applying it to various examples.
+          
+          <h2>Game-Theoretic Framework</h2>
+          A game is defined as \( \mathcal{G} = \{S, A, T, R, G\} \), where:
+
+          - \( S \): Set of all possible states.
+          - \( A \): Set of all possible actions.
+          - \( T \): Transition function.
+          - \( R \): Set of rules.
+          - \( G \): Set of goal states.
+          
+          The set of rules \( R \) is defined as \( R = \{r_1, r_2, \ldots, r_n\} \), where each rule \( r_i \) is a function:
+          
+          \[ r_i: S \times A \times C \times W \rightarrow \mathcal{P}(S \times O) \]
+          
+          Here, \( C \) represents the DOFs or properties of the agent, and \( W \) represents the physical world. \( O \) denotes other outcome dimensions.
+          
+          \( R \) crucially influences the transition function \( T \) and the possible outcomes of actions taken by the agent within the environment.
+          
+          The Computational Efficiency Factor (CEF) in games is then defined as \( CEF(\mathcal{G}) \), and the revised unit of intelligence \( U_i(\mathcal{G}) \) is:
+          
+          \[
+          U_i(\mathcal{G}) = \frac{P(s, a)}{CEF(\mathcal{G})}
+          \]
+          
+          where \( P(s, a) \) is the performance function.
+          <h2>CEF Application Examples</h2>
+          <h3>Animal Intelligence: Crows Solving Puzzles</h3>
+          <ul>
+            <li><strong>S</strong>: Different configurations of the puzzle.</li>
+            <li><strong>A</strong>: Physical actions the crow can take.</li>
+            <li><strong>T</strong>: Changes in puzzle state, influenced by <strong>R</strong>.</li>
+            <li><strong>R</strong>: Rules include physical laws, crow's abilities, puzzle constraints.</li>
+            <li><strong>G</strong>: States where the puzzle is solved.</li>
+          </ul> 
+          
+          <h3>Chess</h3>
+          In the context of an agent playing chess, we can illustrate how the transition function \( T \) and the set of rules \( R \) relate to each other. In many cases, particularly in well-defined games like chess, \( T \) and \( R \) can indeed be very similar or even identical, as the rules of the game inherently dictate the transitions between states and the agent has been abstracted away (it doesn't quite matter if the agent uses a program, a stick, their finger, hand, or toes to move a piece).
+          
+          <ul>
+            <li><strong>S</strong>: Chessboard configurations.</li>
+            <li><strong>A</strong>: Legal chess moves.</li>
+            <li><strong>T</strong>: Transition function based on the rules of chess for moves.</li>
+            <li><strong>R</strong>: Set of rules also reflecting the rules of chess for moves.</li>
+            <li><strong>G</strong>: Checkmate and winning conditions.</li>
+           </ul>
+          
+          In chess, as well as in other simpler abstract games, both the transition function \( T \) and the set of rules \( R \) are governed by the same principles – the rules of chess. Thus, in this example:
+          
+          <ul>
+            <li>\( T \) describes how a given move (action) leads to a new configuration of the chessboard (state).</li>
+            <li>\( R \), while conceptually similar to \( T \), encompasses a broader scope, including all the legalities and constraints of moves, which inherently define the possible transitions.</li>
+          </ul>
+          
+          Therefore, in games like chess where the rules strictly define possible actions and their outcomes, \( T \) and \( R \) converge in their roles. However, in more complex or less structured environments, \( R \) might include additional factors that influence the agent's decisions and actions beyond the immediate state transitions described by \( T \).
+          
+          <h3>Sudoku</h3>
+          In the case of Sudoku, the relationship between \( T \) and \( R \) is also closely aligned, as the rules of the game directly dictate the possible state transitions.
+          
+          <ul>
+            <li>\( S \): Sudoku grid configurations.</li>
+            <li>\( A \): Placing a number in an empty cell.</li>
+            <li>\( T \): Updates the grid based on the number placement.</li>
+            <li>\( R \): Rules of Sudoku that dictate where numbers can be placed (each number 1-9 appears once in each row, column, and 3x3 subgrid).</li>
+            <li>\( G \): The grid is completely filled with numbers correctly according to Sudoku rules.</li>
+          </ul>
+          
+          <h3>Route Planning</h3>
+          In the context of route planning, \( T \) and \( R \) can be distinct. While \( T \) governs the physical transition between locations, \( R \) might involve broader considerations like efficiency or traffic laws - utilitarian or goal related restraints can still be interpreted as bounding rules.
+          
+          <ul>
+            <li>\( S \): Current location and locations of errands.</li>
+            <li>\( A \): Deciding the next destination or path to take.</li>
+            <li>\( T \): The actual movement or transition from one location to the next.</li>
+            <li>\( R \): Considerations for route planning such as traffic laws, road conditions, and the most efficient path to complete all errands.</li>
+            <li>\( G \): All errands are completed and the final destination is reached.</li>
+          </ul>
+          
+          <h3>Data Analysis</h3>
+          In the context of data analysis, the framework can be applied by considering each step of the analysis as a part of a larger 'game' of extracting insights from data. Here, the set of rules \( R \) encompasses both the logical steps in data processing and the overarching goals of the analysis.
+          
+          <ul>
+            <li>\( S \): Represents the different stages or states of the data during the analysis process, such as raw data, cleaned data, processed data, and final analytical outcomes.</li>
+            <li>\( A \): Consists of the various actions or analysis steps that can be performed on the data, like filtering, sorting, applying statistical methods, or machine learning algorithms.</li>
+            <li>\( T \): The transition function describes how an action taken on the data at one stage transforms it into another stage. This includes the transformation of raw data into more structured forms or the application of analytical models.</li>
+            <li>\( R \): In this context, \( R \) defines both the permissible actions based on the state of the data and the analytical goals. It includes rules for data integrity, statistical validity, and the objectives of the analysis, such as uncovering specific patterns or reaching certain conclusions.</li>
+            <li>\( G \): These are the goal states, representing the successful completion of the analysis, such as the extraction of meaningful insights, the validation of a hypothesis, or the achievement of a sufficient level of understanding of the data.</li>
+          </ul>
+          
+          <h3>Implications for the Game-Theoretic Framework</h3>
+          This integration of the reward function into \( R \) has several implications for our game-theoretic framework:
+          
+          <ul>
+            <li>It simplifies the model by consolidating the rules and objectives into a single, coherent set of guidelines that the agent follows.</li>
+            <li>It aligns with the notion of goal-directed behavior being a fundamental aspect of intelligent systems, as the rules are now inherently linked to the achievement of objectives.</li>
+            <li>It emphasizes the importance of the interaction between the agent and its environment, as \( R \) represents not just the physical or logical constraints but also the motivational factors guiding the agent's decisions.</li>
+          </ul>
+          
+          <h2>Conclusion</h2>
+          The consideration of utilitarian or goal-related restraints as part of the set of rules \( R \) suggests that the traditional concept of a reward function in many models is, in fact, being encoded into our new definition of \( R \). While in traditional models, the reward function typically guides the agent towards specific goals by assigning values to certain outcomes or states, in our revised framework, these goal-directed incentives are inherently captured within \( R \), as it encompasses not only the permissible actions and outcomes but also the broader objectives and constraints of the task. Therefore, \( R \) in our model not only dictates the legalities and possibilities of actions and state transitions but also implicitly guides the agent towards the goal states, similar to how a reward function would.
+        </article>
+
+        <article id="U">
+          <header><h3 style="text-align: center;">\( U_i \) - A Computational and Information-Theoretic Approach to Measuring Intelligence with Computational Efficiency Considerations</h3></header>
+
+            <h2>Introduction</h2>
+            This report proposes a novel method for defining and measuring intelligence, incorporating computational and information-theoretic principles, with an extension to include a measure of computational efficiency.
+            
+            <h2>Defining Intelligence</h2>
+            <p>Intelligence is measured from the performed computations necessary to solving a task or achieving goals, with a focus on computational efficiency. In other words, intelligence as defined for the purposes of this work is not an unchanging property of the agent performing the task. It is not a characteristic, except perhaps as a potential in task execution. This definition has a limit in scope, that of the known optimal solution for a given task. Without this, no real assessment should be made except in relativistic utilitarian terms.</p>
+            
+            <p>Let us denote the unit of intelligence as \( U_i \). The formulation involves three key components:</p>
+            
+            <ol>
+                <li><strong>Information Processing Rate (\( R \)):</strong> The rate at which an entity processes information, measured in bits per second.</li>
+                <li><strong>Useful Computation (\( UC(t) \)):</strong> The total amount of computation in a time interval \( t \) that causally contributes to solving a given task, measured in bits.</li>
+                <li><strong>Efficiency Factor (\( \epsilon \)):</strong> A ratio where \( 0 \leq \epsilon \leq 1 \) representing the efficiency of computation.</li>
+            </ol>
+            
+            <p>The unit of intelligence, \( U_i \), is thus defined as:</p>
+            
+            <div>
+                \[ U_i = \int_0^t R \cdot \epsilon \, dt \]
+            </div>
+            
+            <h2>Operationalizing the Definition</h2>
+            <p>Operationalizing this definition involves:</p>
+            
+            <ul>
+                <li>Measuring the information processing rate (\( R \)).</li>
+                <li>Developing methodologies to trace and quantify \( UC(t) \).</li>
+                <li>Estimating the efficiency factor (\( \epsilon \)) through advanced analytical techniques.</li>
+            </ul>
+            
+            <h2>Mathematical Formulation</h2>
+            <p>The unit of intelligence, \( U_i \), is extended to include the Computational Efficiency Factor (CEF).</p>
+            
+            <h2>Incorporating Computational Efficiency</h2>
+            
+            <h3>Computational Efficiency Factor (CEF)</h3>
+            <p>CEF measures the complexity of tasks in relation to the resources used for completion.</p>
+            
+            <h3>Revised Intelligence Unit</h3>
+            <p>The intelligence unit is modified to:</p>
+            
+            <div>
+                \[ U_i = \int_0^t \frac{R \cdot \epsilon}{CEF} \, dt \]
+            </div>
+            
+            <h2>Examples of CEF Application</h2>
+            <h3>Animal: Crows Solving Puzzles</h3>
+            Crows are known for their problem-solving skills. When a crow figures out how to obtain food from a complex puzzle using fewer steps compared to its peers, the task execution demonstrates a lower CEF, indicating higher intelligence for that performance.
+            
+            <h3>Computer Games: AI in Chess</h3>
+            In chess-playing AI, the CEF can be applied by comparing the number of moves (resources) the AI uses to checkmate its opponent. A move that achieves checkmate in fewer moves indicates a lower CEF.
+            
+            <h3>Mathematical Games: Sudoku</h3>
+            In Sudoku, the CEF can be applied to measure speed and effeciency in a strategy deployed by a person or AI in completing the puzzle. Fewer moves and less time indicate a lower CEF, reflecting a higher $U_i$ for that task.
+            
+            <h3>Everyday Tasks: Efficient Route Planning</h3>
+            Consider the task of planning the most efficient route for multiple errands. A person or AI system that optimizes the route out of many possible routes to minimize time and travel distance demonstrates a lower CEF for that particular route.
+            
+            <h3>Scientific Research: Data Analysis</h3>
+            In scientific research, particularly data analysis, the CEF can assess how different strategies differ in efficiency when a researcher or AI system attempt to extract meaningful insights from large datasets. Efficient algorithms that provide accurate results with minimal computational resources indicate a lower CEF.
+            
+            <h2>Conclusion</h2>
+            The extended model with CEF provides a more nuanced and applicable measure of intelligence across tasks in various domains. It allows for the assessment of intelligence in a manner that is both universal and adaptable to different contexts, from animal behavior to advanced computational systems, and it does this without much weight being placed on the agent. In fact, it emerges as an analytical tool to be used by agent in defining strategies in solving tasks, not to define it.
+            </div>
+          </div>
+        </article>
+
+        <article id="Viral_Fungal">
+          <header><h3 style="text-align: center;">Investigating Weak-to-Strong Generalization in Deep Neural Networks through Viral and Fungal Algorithms</h3></header>
+
+        <h2>Abstract</h2>
+        <p>This research aims to explore the concept of weak-to-strong generalization in deep learning by drawing analogies from biological systems, specifically viruses and fungi, and applying these concepts to Multi-Layer Perceptrons (MLPs). We propose to develop and test two novel algorithmic interventions, termed "viral algorithms" and "fungal algorithms," to investigate their impact on the learning and generalization capabilities of neural networks.</p>
+
+        <h2>Introduction</h2>
+        <p>Generalization in neural networks, particularly how small, less complex systems (analogous to viruses and fungi) influence larger, more complex ones (hosts), remains a key area of exploration. This proposal outlines a mathematical and experimental approach to study this phenomenon, using small MLPs as testbeds.</p>
+
+        <h2>Theoretical Framework</h2>
+        <h3>Viral Algorithms in Neural Networks</h3>
+        <p>A viral algorithm is envisioned as a collection of small, self-replicating nodes within a neural network. These nodes, once activated, replicate and connect to other nodes in the network, effectively inflating a specific circuit or layer. This inflation aims to steer the network towards a predetermined output, aligning the network's behavior with specific goals, particularly in preventing certain undesired outcomes.</p>
+
+        <h3>Mathematical Definition</h3>
+        <p>Let \( V \) represent a set of viral nodes within the neural network \( N \). Each node in \( V \) has the capability to replicate and form connections with adjacent nodes in \( N \). The replication and connection process is governed by a set of rules or functions, which are defined as follows:</p>
+
+        <p>- Replication Function: \( R(v_i, \theta_{r}) \) where \( v_i \) is a viral node and \( \theta_{r} \) are the replication parameters. This function determines how and when a viral node replicates within the network.</p>
+        <p>- Connection Function: \( C(v_i, v_j, \theta_{c}) \) where \( v_i, v_j \) are viral nodes and \( \theta_{c} \) are the connection parameters. This function establishes new connections between viral nodes and the host network's nodes.</p>
+
+        <p>The influence of the viral nodes on the network's output is described by the function:</p>
+
+        \[
+        O(N, V) = N(x) + \sum_{v_i \in V} w_{v_i} \cdot a_{v_i}(x; \theta_{v_i})
+        \]
+
+        <p>where \( O(N, V) \) is the output of the network with viral influence, \( N(x) \) is the original network output, \( w_{v_i} \) are the weights assigned to the outputs of the viral nodes, and \( a_{v_i}(x; \theta_{v_i}) \) represents the activation of each viral node \( v_i \) given an input \( x \) and its parameters \( \theta_{v_i} \).</p>
+
+        <h3>Application in Alignment and Control</h3>
+        <p>The primary application of this viral algorithm is aimed at alignment and control, specifically in ensuring that the network does not produce certain undesirable outputs. This can be achieved by programming the viral nodes to inflate the network in a way that counteracts tendencies towards these undesirable outputs.</p>
+
+        <p>For instance, if a particular output \( y_{undesired} \) is not to be produced, the viral nodes can be configured to detect when the network is leaning towards \( y_{undesired} \) and actively modify the network's structure and weights to steer away from it. This can be mathematically represented as:</p>
+
+        \[
+        \text{if } N(x) \approx y_{undesired} \text{ then activate } R(v_i, \theta_{r}) \text{ and } C(v_i, v_j, \theta_{c})
+        \]
+
+
+        <h3>Fungal Algorithms in Neural Networks</h3>
+
+        <p>\textbf{Concept:} A fungal algorithm represents a network of small MLPs that attach to the main network, injecting information to modify the network’s output.</p>
+
+        <p>Let \( F = \{f_1, f_2, ..., f_n\} \) be a set of small MLPs, termed 'fungi'. Each \( f_i \) attaches to different parts of the main network \( N \).
+
+        <p>Attachment Function: \( A(f_i, N) \rightarrow N' \), where \( N' \) is the modified network.</p>
+
+        <p>Each \( f_i \) influences \( N \) based on its parameters \( \theta_{f_i} \), optimized to induce specific changes in \( N \)'s output.</p>
+
+        <h2>Experiment Design</h2>
+        <h3>Objective</h3>
+        <p>To evaluate how viral and fungal algorithms influence the learning and generalization behavior of MLPs in classification tasks.</p>
+
+        <h3>Methodology</h3>
+        <ol>
+          <li><strong>Network Selection</strong>: Choose a standard MLP architecture for classification tasks.</li>
+          <li><strong>Algorithm Integration</strong>: Integrate viral and fungal algorithms into the MLP.</li>
+          <li><strong>Training and Evaluation</strong>: Train the modified MLP on standard datasets and evaluate performance changes.</li>
+        </ol>
+      
+
+        <h3>Metrics</h3>
+        <ol>
+          <li><strong>Network Selection</strong>: Choose a standard MLP architecture for classification tasks.</li>
+          <li><strong>Algorithm Integration</strong>: Integrate viral and fungal algorithms into the MLP.</li>
+          <li><strong>Training and Evaluation</strong>: Train the modified MLP on standard datasets and evaluate performance changes.</li>
+        </ol>
+      
+
+        <h3>Conclusion</h3>
+        <p>This research aims to deepen our understanding of weak-to-strong generalization in neural networks through novel algorithmic interventions inspired by biological systems. The outcomes may reveal new pathways for enhancing neural network performance and robustness.</p>
+
+        <h2>Detailed Description of the Fungal Algorithm</h2>
+
+        <h3>Conceptual Overview</h3>
+
+        <p>Fungal algorithms represent a system of small neural network modules that interface with a larger host network. Each module, termed a 'fungal unit', attaches to specific nodes or layers of the host network, influencing its outputs in a controlled manner, akin to the mycelium network of fungi.</p>
+
+        <h3>Mathematical Framework</h3>
+
+        <p>Let's denote the following:</p>
+
+        <ul>
+          <li>\( N \): The host neural network.</li>
+          <li>\( F = \{f_1, f_2, ..., f_n\} \): A set of small MLPs representing the fungal units.</li>
+          <li>\( \theta_{f_i} \): The set of parameters for each fungal unit \( f_i \).</li>
+          <li>\( A(f_i, l_j, N) \): The attachment function, where \( f_i \) attaches to layer \( l_j \) in \( N \).</li>
+        </ul>
+
+        <p>Each fungal unit \( f_i \) receives input from the layer \( l_j \) it attaches to and outputs a modified signal. For a layer \( l_j \) in \( N \) with activation \( \phi \) and input \( x_j \), the standard activation is \( \phi(W_j x_j + b_j) \). When a fungal unit \( f_i \) is attached, the activation becomes:</p>
+
+        \[
+        \phi(W_j x_j + b_j + \psi(f_i, x_j, \theta_{f_i}))
+        \]
+
+        <p>Here, \( \psi \) represents the functional contribution of the fungal unit \( f_i \), dependent on its input \( x_j \), parameters \( \theta_{f_i} \), and internal architecture.</p>
+
+        <h2>Detailed Description of the Viral Algorithm</h2>
+
+        <h3>Conceptual Overview</h3>
+        <p>A viral algorithm is envisioned as a collection of small, self-replicating nodes within a neural network \( N \). These nodes, once activated, replicate and connect to other nodes in the network, effectively inflating a specific circuit or layer. This process aims to steer the network towards a predetermined output, aligning the network's behavior with specific goals, particularly in preventing certain undesired outcomes.</p>
+
+        <h3>Mathematical Definition</h3>
+        <p>Let \( V \) represent a set of viral nodes within the neural network \( N \). Each node in \( V \) has the capability to replicate and form connections with adjacent nodes in \( N \). The replication and connection process is governed by the following functions:</p>
+
+        <ul>
+          <li>Replication Function: \( R(v_i, \theta_{r}) \), where \( v_i \) is a viral node and \( \theta_{r} \) are the replication parameters. This function governs how and when a viral node replicates within the network.</li>
+          <li>Connection Function: \( C(v_i, v_j, \theta_{c}) \), where \( v_i, v_j \) are viral nodes and \( \theta_{c} \) are the connection parameters. This function establishes new connections between viral nodes and the host network's nodes.</li>
+        </ul>
+
+      <p>The influence of the viral nodes on the network's output is given by:</p>
+
+        \[
+        O(N, V) = N(x) + \sum_{v_i \in V} w_{v_i} \cdot a_{v_i}(x; \theta_{v_i})
+        \]
+
+        <p>where \( O(N, V) \) is the output of the network with viral influence, \( N(x) \) is the original network output, \( w_{v_i} \) are the weights for the viral nodes, and \( a_{v_i}(x; \theta_{v_i}) \) is the activation of each viral node \( v_i \) given an input \( x \).</p>
+
+        <h3>Application in Alignment and Control</h3>
+        <p>The primary application of this viral algorithm is in alignment and control, specifically ensuring that the network does not produce certain undesirable outputs. This can be achieved by programming the viral nodes to inflate the network in a way that counteracts tendencies towards these undesirable outputs. For instance, if a particular output \( y_{undesired} \) is not to be produced, the viral nodes can be configured to detect when the network is leaning towards \( y_{undesired} \) and actively modify the network's structure and weights to steer away from it, represented as:</p>
+
+        \[
+        \text{if } N(x) \approx y_{undesired} \text{ then activate } R(v_i, \theta_{r}) \text{ and } C(v_i, v_j, \theta_{c})
+        \]
+
+        <h3>Adaptive Noise Filtering in Control Systems</h3>
+        <p>textbf{Context:} Control systems need to operate robustly in the presence of noise. A viral algorithm could be designed to enhance a neural network’s ability to filter out noise adaptively.</p>
+
+        <p>Let \( V \) be the viral unit trained for noise pattern recognition. It could adjust the weights \( \Delta W \) of the network \( N \) in real-time to minimize the impact of noise:</p>
+
+        \[
+        N'(x) = N(x) + V(x; \theta_v)
+        \]
+
+        <h3>Dynamic Control Parameter Adjustment</h3>
+        \textbf{Context:} In dynamic environments, control systems need to rapidly adapt to changing conditions.</p>
+
+        <p>The viral unit \( V \) dynamically adjusts the control parameters of the network \( N \) based on environmental feedback:</p>
+
+        \[
+        \theta_{N'} = \theta_N + \alpha \cdot V(\text{env}; \theta_v)
+        \]
+
+        <h3>Fault Tolerance Enhancement</h3>
+        \textbf{Context:} Increasing fault tolerance in control systems is crucial for reliability.
+
+        <p>The viral unit \( V \) is designed to detect and compensate for faults in the network \( N \):</p>
+
+        \[
+        N'(x) = N(x) * (1 - V(\text{fault}; \theta_v))
+        \]
+        <h2>Fungal Algorithm Examples</h2>
+
+        <h3>Balancing Control in Robotics</h3>
+        \textbf{Context:} For robots operating on uneven terrain, maintaining balance is a continuous challenge.</p>
+
+        <p>The fungal units \( F \) are distributed across the network \( N \), each fine-tuning the control outputs for balance. The combined control output can be represented as:</p>
+
+        \[
+        C = \sum_{i=1}^{n} f_i(\text{sensor}_i; \theta_{f_i}) + N(\text{input})
+        \]
+
+        <p>where \( C \) is the overall control output, \( f_i \) are the individual fungal units, and \( \text{sensor}_i \) are the inputs from various balance-related sensors.</p>
+
+        <h3>Energy Efficiency Optimization in Automated Systems</h3>
+        <p>textbf{Context:} In automated manufacturing, optimizing energy efficiency without compromising performance is vital.</p>
+
+        <p>Fungal units \( F \) adjust operational parameters to optimize energy usage. The optimization function can be:</p>
+
+        \[
+        \text{Energy}_{\text{opt}} = N(\text{input}) - \lambda \sum_{i=1}^{n} f_i(\text{operation}_i; \theta_{f_i})
+        \]
+
+        <p>where \( \lambda \) is a factor balancing performance and energy efficiency.</p>
+
+        <h3>Predictive Maintenance in Industrial Control Systems</h3>
+        \textbf{Context:} Predictive maintenance can significantly reduce downtime in industrial settings.</p>
+
+        <p>The fungal units \( F \) analyze patterns indicative of potential failures. The predictive function could be:</p>
+
+        \[
+        P = \sum_{i=1}^{n} f_i(\text{machine\_data}_i; \theta_{f_i})
+        \]
+
+        <p>where \( P \) represents the predictive maintenance output based on various machine data inputs analyzed by the fungal units.</p>
+
+        <h2>Metric for Analyzing Learning and Classification Dynamics</h2>
+
+        <p>To quantitatively assess the impact of the integrated viral and fungal algorithms on the host network's learning and classification dynamics, we introduce a metric termed the \textit{Dynamics Alteration Score} (DAS).</p>
+
+        <p>The DAS is defined as the sum of two components: the Learning Dynamics Divergence (LDD) and the Classification Dynamics Divergence (CDD). Mathematically, it is represented as:</p>
+
+        \[
+        \text{DAS}(N, N') = \text{LDD}(N, N') + \text{CDD}(N, N')
+        \]
+
+        <p>where \( N \) is the original host network and \( N' \) is the network modified with viral or fungal algorithms.</p>
+
+        <p>LDD measures the divergence in the learning behavior (e.g., weight updates, loss reduction pattern) between \( N \) and \( N' \) during training. It is defined as:</p>
+
+        \[
+        \text{LDD}(N, N') = \frac{1}{T} \sum_{t=1}^{T} || W_{N,t} - W_{N',t} ||_2
+        \]
+
+        <p>where \( T \) is the number of training iterations, \( W_{N,t} \) and \( W_{N',t} \) are the weights of \( N \) and \( N' \) at iteration \( t \), respectively, and \( || \cdot ||_2 \) denotes the L2 norm.</p>
+
+        <p>CDD captures the differences in classification behavior (e.g., decision boundaries, confidence of predictions) between \( N \) and \( N' \). It can be defined as:</p>
+
+        \[
+        \text{CDD}(N, N') = \frac{1}{|D|} \sum_{(x,y) \in D} | P_{N}(y|x) - P_{N'}(y|x) |
+        \]
+
+        <p>where \( D \) is the dataset, \( (x, y) \) are the input-output pairs in \( D \), and \( P_{N}(y|x) \) and \( P_{N'}(y|x) \) are the predicted probabilities of the correct class \( y \) given input \( x \) by networks \( N \) and \( N' \), respectively.</p>
+
+        <p>A higher DAS indicates a greater degree of alteration in the host network's learning and classification dynamics due to the integration of the viral or fungal algorithms. This metric can be used to balance the trade-off between desired alterations (e.g., enhanced robustness or generalization) and the preservation of the host network's original capabilities.</p>
+        </article>
+    </article>
+  </main>
+
+  <footer>
+    <p><a href="#banner">Return to Top</a></p>
+  </footer>
+</body>
 </html>
