@@ -3,41 +3,50 @@
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-size: 1em;
-  font-weight: normal;  
+  font-weight: normal;
   font-family: 'Times New Roman', serif;
   background: #FFFFFF;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center content horizontally */
+  padding: 0 1rem; /* Padding on sides */
+  flex-direction: column; /* Stack children vertically */
 }
 
 .page {
-min-height: 100vh;
-position: relative;
-text-align: center;
-padding: 0rem 5rem;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  padding: 0rem 1rem; /* Inner padding */
+  margin: 0 auto; /* Auto margin for horizontal centering */
+  max-width: 600px; /* Adjust this value to control content width */
 }
 
 .page:not(:first-child) {
-padding-top: 14rem;
+  padding-top: 14rem;
 }
 
 .page-wrapper {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 #banner {
-padding: 2%;
-margin: 2%;
-width: 100%;
-border-bottom: 1px solid #000000;
+  align-self: stretch; /* Make banner stretch full width */
+  text-align: center; /* Center title text */
+  padding: 2%;
+  margin: 2%;
+  width: 96%;
+  border-bottom: 1px solid #000000;
 }
 
 #banner h1{
@@ -49,12 +58,19 @@ margin-bottom: 0;
 }
 
 nav {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-background: #F0F0F0;
-border-bottom: 1px solid #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #F0F0F0;
+  border-bottom: 1px solid #000000;
+  padding-left: 1rem; /* Add padding to align the menu items to the left */
+}
+
+nav ul {
+  margin: 0; /* Reset margin for the ul element in the nav */
+  padding: 0;
+  list-style-type: none;
 }
 
 nav li {
@@ -95,10 +111,12 @@ margin: 20px;
 border: 1px solid #000000;
 }
 
-footer{
-background: #F0F0F0;
-border-top: 1px solid #000000;
-padding: .5em;
+footer {
+  background: #F0F0F0;
+  border-top: 1px solid #000000;
+  width: 100%; /* Ensure footer takes full width */
+  left: 0;
+  right: 0;
 }
 
 footer a{
