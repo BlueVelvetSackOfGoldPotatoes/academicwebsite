@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="stylesheet" type="text/css" href='../style/style.css'>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</head>
+</head>
+
+<body>
+  <header id="banner">
+    <h1>Gonçalo Hora de Carvalho</h1>
+    <nav id="menu">
+        <ul>
+            <li>
+                <a href="../index.html">WIPs</a>
+                <ul class="dropdown">
+                  <li><a href="o_truth.html#o-truth">O-Truth</a></li>
+                  <li><a href="lcl.html#lego">LEGO Connect Language</a></li>
+                  <li><a href="parrots.html#parrots-turing-trap">Parrots, the Turing Trap &amp; the problem of Artificial Dualism</a></li>
+                  <li><a href="child_play.html#child-play">ChildPlay Benchmark</a></li>
+                  <!-- Add other article links here -->
+                </ul>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+                <ul class="dropdown">
+                  <li><a href="../blog.html#parrots">Parrots</a></li>
+                  <li><a href="../blog.html#artificial_dualism">Artificial Dualism</a></li>
+                  <li><a href="../blog.html#black_boxes">Black Boxes R NOT Pitch Black</a></li>
+                  <li><a href="../blog.html#turing_trap">TTT</a></li>
+                  <li><a href="../blog.html#language">On Language</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+    <article id="child-play">
+        <header><h2 style="text-align: center;">Evaluating Large Language Models Beyond Textual Understanding with ChildPlay</header></h2>
+        <header><h3 style="text-align: center;">Gonçalo Carvalho, Oscar Knap, and Robert Pollice</header></h3>
+        <header><h4 style="text-align: center;">2025</header></h4>
+        <p>
+            We developed a benchmark set to assess the generalization of state-of-the-art large language models on problems beyond linguistic tasks and evaluate it on a systematic progression of GPT models (GPT-3.5, GPT-4, GPT-4o, GPT-4o-mini). Using simple games like Tic-Tac-Toe, Connect Four, Battleship, and a Shape Recognition Game, all encoded in ASCII, we test strategic capabilities and spatial reasoning, core abilities any artificial intelligence would need to master for solving problems in chemistry. To probe generalization, we introduce two new games for spatial logic: LEGO Connect Language (LCL) and Guess-the-SMILES (GtS), a operationally simple chemistry benchmark. Our results show that GPT models provide meaningful responses for several tasks but, generally, perform poorly. A systematic performance progression with increased model capabilities (GPT-3.5, GPT-4, GPT-4o) is only observed for 4 out of the 7 benchmark tasks. All models consistently struggle with Battleship, LCL, and GtS. This suggests that while GPT models can emulate conversational proficiency and basic rule comprehension, they have limited generalization with respect to strategy and spatial reasoning. Particularly poor performance is observed for interpreting molecular graphs when encoded in ASCII. The results provided by our open-source benchmark suite (<a href="https://github.com/BlueVelvetSackOfGoldPotatoes/child-play" target="_blank">
+            <code>ChildPlay</code> GitHub Repository
+        </a>) caution against claims of emergent intelligence in GPT models, which appear more specialized than general.
+        </p>
+    </article>
+
+</main>
+
+<footer>
+  <!-- <p><a href="#banner">Return to Top</a></p> -->
+</footer>
+</body>
+</html>
