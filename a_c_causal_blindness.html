@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="stylesheet" type="text/css" href='../style/style.css'>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</head>
+</head>
+
+<body>
+  
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading nav:', error));
+    </script>
+
+  <div class="container">
+    <article id="child-play">
+        <header><h2 style="text-align: center;">C-Causal Blindness</header></h2>
+        <header><h3 style="text-align: center;">Gonçalo Carvalho</header></h3>
+        <header><h4 style="text-align: center;">2022</header></h4>
+        <p>
+            This text is concerned with a hypothetical flavour of cognitive blindness referred to in this paper as \textit{C-Causal Blindness} or C-CB. A cognitive blindness where the policy to obtain the objective leads to the state to be avoided. A literal example of C-CB would be \textit{Kurt Gödel's} decision to starve for \textit{"fear of being poisoned"} - take this to be premise \textbf{A}. The objective being \textit{"to avoid being poisoned (so as to not die)"}: \textbf{C}, the plan or policy being \textit{"don't eat"}: \textbf{B}, and the actual outcome having been \textit{"dying"}: ¬\textbf{C} - the state that Gödel wanted to avoid to begin with. Gödel pursued a strategy that caused the result he wanted to avoid. An experimental computational framework is proposed to show the isomorphic relationship between C-CB in brain computations, logic, and computer computations using a new proposed algorithm: a Weighted Hidden Markov Model.
+        </p>
+    </article>
+    <section id="preprint-display">
+      <h2>Preprint</h2>
+      <p>
+        <strong>C-Causal Blindness</strong><br>
+        Gonçalo Carvalho; 2022
+      </p>
+      <a href="https://arxiv.org/abs/2208.07143" target="_blank">Read Preprint</a>
+    </section>
+  </div>
+
+</main>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+<div id="footer-placeholder"></div>
+</body>
+</html>

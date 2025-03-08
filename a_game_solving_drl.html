@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="stylesheet" type="text/css" href='../style/style.css'>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</head>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading nav:', error));
+  </script>
+  <div class="container">
+    <article id="game-solving-drl">
+        <header><h2 style="text-align: center;">Game-Solving DRL An Introductory Literature Survey of the Last Decade & A Critical Methodological Review</header></h2>
+        <header><h3 style="text-align: center;">Gonçalo Carvalho, Twan Vos</header></h3>
+        <header><h4 style="text-align: center;">2024</header></h4>
+        <p>
+            Deep Reinforcement Learning (DRL) has demonstrated remarkable success in high-dimensional and stochastic environments, with applications ranging from board games to real-time multi-agent systems. However, the field continues to face fundamental methodological challenges, including inconsistencies in benchmarking, a lack of theoretical definitions, and difficulties in generalization. In this paper, we critically examine these limitations and explore whether DRL can be reframed as a general problem-solving methodology. Specifically, we hypothesize that any complex problem can, in principle, be formulated as a game, making it solvable via DRL under the right conditions.
+            We review key advancements in DRL, including techniques such as value prediction functions, policy gradients, and model-based learning approaches like MuZero. Our analysis identifies persistent gaps in current methodologies, such as the reliance on handcrafted reward signals and computational inefficiencies. To address these concerns, we propose a recursive decomposition framework in which complex problems are broken down into sub-problems, each mapped onto a DRL solvable structure. We introduce an extended Markov Decision Process (MDP) formulation incorporating intrinsic motivation and goal representations, allowing for reward-free optimization.
+            Our results suggest that, if DRL can autonomously learn goal representations and intrinsic reward structures, it may serve as a generalizable tool for problem-solving beyond traditional reinforcement learning applications. However, open questions remain regarding computational feasibility, scalability, and the theoretical limits of game-based problem encoding. We conclude by discussing potential future directions, including the need for improved interpretability and a deeper mathematical foundation for DRL as a general AI paradigm.
+        </p>
+    </article>
+    
+    <section id="preprint-display">
+      <h2>Preprint</h2>
+      <p>
+        <strong>Game-Solving DRL: An Introductory Literature Survey of the Last Decade &amp; A Critical Methodological Review</strong><br>
+        Gonçalo Carvalho, Twan Vos &middot; 2024
+      </p>
+      <a href="https://osf.io/preprints/osf/7zmx2_v1" target="_blank">Read Preprint</a>
+    </section>
+  </div>
+
+</main>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+<div id="footer-placeholder"></div>
+</body>
+</html>

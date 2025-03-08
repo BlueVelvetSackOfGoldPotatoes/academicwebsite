@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="stylesheet" type="text/css" href='../style/style.css'>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</head>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading nav:', error));
+  </script>
+
+  <div class="container">
+    <article id="parrots-turing-trap">
+      <header><h2 style="text-align: center;">Evaluating Large Language Models Beyond Textual Understanding and on Knowledge of Chemistry with ChildPlay and ChemResQA </header></h2>
+      <header><h4 style="text-align: center;">2024</header></h4>
+        <p>
+          Our aim is to discover a pre-trained model that will serve as a baseline for developing a computational research assistant program in the domain of chemistry which should be able to contribute meaningfully to real research questions in their respective workflows. We hypothesise that an important module of such a system will be a Large Language Model (LLM) and as such we proceed to create appropriate benchmarks to evaluate the best existing models both in spatial reasoning - an important task in chemistry-related tasks - and in their chemistry knowledge. The evaluation of LLMs often focuses on linguistic tasks, yet such assessments may not fully capture the models' general reasoning capabilities. We explore the hypothesis that LLMs, such as GPT-3.5 and GPT-4, possess broader cognitive functions, particularly in non-linguistic domains. Our approach extends beyond standard linguistic benchmarks by incorporating games like Tic-Tac-Toe, Connect Four, and Battleship, encoded via ASCII, to assess strategic thinking and decision-making. To evaluate the models' ability to generalize beyond their training data, we introduce two additional games. The first game, LEGO Connect Language (LCL), tests the models' capacity to understand spatial logic and follow assembly instructions, akin to the assembly of molecules from atomic building blocks. The second game, the game of shapes, challenges the models to identify shapes represented by 1s within a matrix of zeros, further testing their spatial reasoning skills. Lastly, we introduce a hidden dataset and task consisting of inputting ASCII representations of molecules to the LLM and evaluating the SMILE output - a task we refer to as GUESS-THE-SMILE (or GtS for short). This "show, don't tell" strategy uses games to reveal potential cognitive capabilities rather than simply querying the models. Finally, we develop an automatically generated dataset totalling 4590 questions and an associated benchmark, ChemResQA (\href{https://github.com/BlueVelvetSackOfGoldPotatoes/chem-res-qa}{GitHub Repository}) using GPT-3.5 and GPT-4 by scraping open-access chemistry-related journals and prompting the GPT models through the API to generate multiple-choice questions (MCQ) per scrapped scientific paper. Regarding ChemResQA, GPT-4 scored 87.15\% and GPT-3.5 81.33\%. In juxtaposition, regarding ChildPlay, our results indicate that despite their proficiency on standard benchmarks and temperature settings, GPT-3.5 and GPT-4's abilities to play and reason about fully observable games without pre-training is mediocre. Both models fail to anticipate losing moves in Tic-Tac-Toe and Connect Four, and they are unable to play Battleship correctly. While GPT-4 shows some success in the game of shapes, both models struggle with the assembly tasks presented in both the LCL and GtS game. These results suggest that while LLMs like the GPT models can emulate conversational proficiency and basic rule comprehension, their performance in strategic gameplay and spatial reasoning tasks shows limited cognitive flexibility and generalization. Importantly, this reveals a blind spot in current LLM benchmarks that we highlight with our gameplay benchmark suite ChildPlay (\href{https://github.com/child-play-neurips/child-play}{GitHub Repository}). Our findings provide a cautionary tale about claims of emergent intelligence and reasoning capabilities of LLMs that are roughly the size of GPT-3.5 and GPT-4.
+        </p>
+    </article>
+    <section id="preprint-display">
+      <h2>Preprint</h2>
+      <p>
+        <strong>EVALUATING LARGE LANGUAGE MODELS BEYOND TEXTUAL UNDERSTANDING AND ON KNOWLEDGE OF CHEMISTRY WITH CHILDPLAY AND CHEMRESQA</strong><br>
+        Gonçalo Carvalho; 2024
+      </p>
+      <a href="https://fse.studenttheses.ub.rug.nl/34195/" target="_blank">Read Preprint</a>
+    </section>
+  </div>
+
+</main>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+<div id="footer-placeholder"></div>
+</body>
+</html>

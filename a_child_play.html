@@ -13,39 +13,20 @@
 </head>
 
 <body>
-  <header id="banner">
-    <h1>Gonçalo Hora de Carvalho</h1>
-    <nav id="menu">
-        <ul>
-            <li>
-                <a href="../index.html">WIPs</a>
-                <ul class="dropdown">
-                  <li><a href="o_truth.html#o-truth">O-Truth</a></li>
-                  <li><a href="lcl.html#lego">LEGO Connect Language</a></li>
-                  <li><a href="parrots.html#parrots-turing-trap">Parrots, the Turing Trap &amp; the problem of Artificial Dualism</a></li>
-                  <li><a href="child_play.html#child-play">ChildPlay Benchmark</a></li>
-                  <!-- Add other article links here -->
-                </ul>
-            </li>
-            <li>
-                <a href="../blog.html">Blog</a>
-                <ul class="dropdown">
-                  <li><a href="../blog.html#parrots">Parrots</a></li>
-                  <li><a href="../blog.html#artificial_dualism">Artificial Dualism</a></li>
-                  <li><a href="../blog.html#black_boxes">Black Boxes R NOT Pitch Black</a></li>
-                  <li><a href="../blog.html#turing_trap">TTT</a></li>
-                  <li><a href="../blog.html#language">On Language</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="../about.html">About</a>
-            </li>
-        </ul>
-    </nav>
-  </header>
+  
+  <div id="nav-placeholder"></div>
+  <script>
+    fetch('nav.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading nav:', error));
+    </script>
 
+  <div class="container">
     <article id="child-play">
-        <header><h2 style="text-align: center;">Evaluating Large Language Models Beyond Textual Understanding with ChildPlay</header></h2>
+        <header><h2 style="text-align: center;">Show, Don't Tell: Evaluating Large Language Models Beyond Textual Understanding with ChildPlay</header></h2>
         <header><h3 style="text-align: center;">Gonçalo Carvalho, Oscar Knap, and Robert Pollice</header></h3>
         <header><h4 style="text-align: center;">2025</header></h4>
         <p>
@@ -54,11 +35,25 @@
         </a>) caution against claims of emergent intelligence in GPT models, which appear more specialized than general.
         </p>
     </article>
+    <section id="preprint-display">
+      <h2>Preprint</h2>
+      <p>
+        <strong>Show, Don't Tell: Evaluating Large Language Models Beyond Textual Understanding with ChildPlay</strong><br>
+        Gonçalo Hora de Carvalho, Oscar Knap, Robert Pollice; 2024
+      </p>
+      <a href="https://arxiv.org/abs/2407.11068" target="_blank">Read Preprint</a>
+    </section>
+  </div>
 
 </main>
-
-<footer>
-  <p><a href="#banner">Return to Top</a></p>
-</footer>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+<div id="footer-placeholder"></div>
 </body>
 </html>

@@ -11,68 +11,59 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
 </head>
 <body>
-  <header id="banner">
-    <h1>Gonçalo Hora de Carvalho</h1>
-    <nav id="menu">
-      <ul>
-        <li>
-          <a href="index.html">WIPs</a>
-          <ul class="dropdown">
-            <li><a href="articles/o_truth.html#o-truth">O-Truth</a></li>
-            <li><a href="articles/lcl.html#lego">LEGO Connect Language</a></li>
-            <li><a href="articles/parrots.html#parrots-turing-trap">Parrots, the Turing Trap &amp; the Problem of Artificial Dualism</a></li>
-            <li><a href="articles/child_play.html#child-play">ChildPlay Benchmark</a></li>
-            <!-- Add other article links here -->
-          </ul>
-        </li>
-        <li>
-          <a href="blog.html">Blog</a>
-          <ul class="dropdown">
-            <li><a href="blog.html#parrots">Parrots</a></li>
-            <li><a href="blog.html#artificial_dualism">Artificial Dualism</a></li>
-            <li><a href="blog.html#black_boxes">Black Boxes R NOT Pitch Black</a></li>
-            <li><a href="blog.html#turing_trap">TTT</a></li>
-            <li><a href="blog.html#language">On Language</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div id="nav-placeholder"></div>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading nav:', error));
+  </script>
 
   <main>
-    <section id="articles">
-      <h2>Articles</h2>
-      <ul>
+    <h2>Articles</h2>
+    <div class="container">
+      <section style="text-align: center;" id="articles">
         <li>
-          <a href="articles/o_truth.html#o-truth">
+          <a href="a_o_truth.html#o-truth">
             O-Truth: Truth as an Approximation of Observer Models to Real Space Objects
           </a>
         </li>
         <li>
-          <a href="articles/lcl.html#lego">
+          <a href="a_lcl.html#lego">
             LEGO Connect Language (LCL): A Textual Approach to LEGO Assembly
           </a>
         </li>
         <li>
-          <a href="articles/parrots.html#parrots-turing-trap">
+          <a href="a_parrots.html#parrots-turing-trap">
             Parrots, the Turing Trap &amp; the Problem of Artificial Dualism
           </a>
         </li>
         <li>
-          <a href="articles/child_play.html#child-play">
+          <a href="a_child_play.html#child-play">
             ChildPlay Benchmark
           </a>
         </li>
-        <!-- Add additional article links as needed -->
-      </ul>
-    </section>
+        <li>
+          <a href="a_game_solving_drl.html#child-play">
+            Game Solving DRL
+          </a>
+        </li>
+          <!-- Add additional article links as needed -->
+      </section>
+    </div>
   </main>
-
-  <footer>
-    <p style="text-align: center;"><a href="#banner">Return to Top</a></p>
-  </footer>
+  <p></p>
+  <script>
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+  <div id="footer-placeholder"></div>
 </body>
 </html>
