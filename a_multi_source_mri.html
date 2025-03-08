@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="stylesheet" type="text/css" href='../style/style.css'>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Prism.js for code highlighting -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+</head>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+  <script>
+    fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading nav:', error));
+  </script>
+  <div class="container">
+    <article id="game-solving-drl">
+        <header><h2 style="text-align: center;">Bottleneck Layer Embedding Differences in
+            Semantic Segmentation of Multi-Source Cardiac
+            MRI</header></h2>
+        <header><h3 style="text-align: center;">Gonçalo Carvalho, Twan Vos</header></h3>
+        <header><h4 style="text-align: center;">2024</header></h4>
+        <p>
+            Recent research has shown advances in the analysis of cardiovascular MRI images
+            using deep learning. However, two problems are apparent: How to measure the quality of the
+            result of semantic segmentations and how to expose dependencies on the actual MRI apparatus
+            used in obtaining the image data sets. The proposed method is based on traditional evaluations
+            at the pixel level. Admittedly, it would be convenient to judge incoming samples on their fa-
+            miliarity in relation to the training data. This would allow for filtering out inadequate samples.
+            In order to solve this conveniently, it is proposed to compare incoming samples to prototypical
+            centroid vectors in an embedding (sub space), by using dimensionality reduction. MRI images
+            used for this experiment are fed through a fully connected network model trained on short-axis
+            MRI’s of left ventricles. The machine learning model was tested using two different data sets
+            collected from two different MRI devices, one generating the UK Biobank data and another,
+            UMCG’s data. The raw MRI’s and the resulting segmentations are used for investigating the
+            problem of finding a reliable comparison method for judging whether an input sample meets
+            the expectations that are represented by the statistics of the training data. To achieve this, a
+            dimensionally reduced representation of the data is calculated with which centroids can be com-
+            puted for classes. Both are then used as dimensionally reduced representations of the data and
+            averaged to represent the centroid of their embedding. An optimal measurement is discovered
+            among three standard distance calculations (SAD, SSD and mean correlation), that is, SAD.
+            This was the best measurement of similarity in raw MRIs (non-segmented) as well as serving as
+            a predictor of segmentation quality, as verified by the Dice metric.
+        </p>
+    </article>
+    
+    <section id="preprint-display">
+      <h2>Preprint</h2>
+      <p>
+        <strong>Bottleneck Layer Embedding Differences in
+            Semantic Segmentation of Multi-Source Cardiac
+            MRI</strong><br>
+        Gonçalo Carvalho; 2020
+      </p>
+      <a href="https://osf.io/s4hv8/?view_only=" target="_blank">Read Preprint</a>
+    </section>
+  </div>
+
+</main>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
+</script>
+<div id="footer-placeholder"></div>
+</body>
+</html>
