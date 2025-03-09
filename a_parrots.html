@@ -13,17 +13,18 @@
 </head>
 
 <body>
+
   <div id="nav-placeholder"></div>
 
   <script>
-    fetch('nav.html')
+      fetch('nav.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
+          document.getElementById('nav-placeholder').innerHTML = data;
       })
       .catch(error => console.error('Error loading nav:', error));
   </script>
-
+<main>
   <div class="container">
     <article id="parrots-turing-trap">
       <header><h2 style="text-align: center;">Evaluating Large Language Models Beyond Textual Understanding and on Knowledge of Chemistry with ChildPlay and ChemResQA </header></h2>
@@ -41,8 +42,8 @@
       <a href="https://fse.studenttheses.ub.rug.nl/34195/" target="_blank">Read Preprint</a>
     </section>
   </div>
-
 </main>
+
 <script>
   fetch('footer.html')
     .then(response => response.text())

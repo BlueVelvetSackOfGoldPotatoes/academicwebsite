@@ -15,15 +15,17 @@
 <body>
   
   <div id="nav-placeholder"></div>
-  <script>
-    fetch('nav.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('nav-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading nav:', error));
-    </script>
 
+  <script>
+      fetch('nav.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading nav:', error));
+  </script>
+
+<main>
   <div class="container">
     <article id="child-play">
         <header><h2 style="text-align: center;">Show, Don't Tell: Evaluating Large Language Models Beyond Textual Understanding with ChildPlay</header></h2>

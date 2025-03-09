@@ -13,17 +13,19 @@
 </head>
 
 <body>
+
   <div id="nav-placeholder"></div>
 
   <script>
-    fetch('nav.html')
+      fetch('nav.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('nav-placeholder').innerHTML = data;
+          document.getElementById('nav-placeholder').innerHTML = data;
       })
       .catch(error => console.error('Error loading nav:', error));
   </script>
 
+<main>
   <div class="container">
   <article id="lego">
     <header><h2 style="text-align: center;">LEGO Connect Language (LCL): A Textual Approach to LEGO Assembly</h2></header>
