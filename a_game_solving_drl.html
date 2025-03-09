@@ -26,8 +26,8 @@
   </script>
 
 <main>
-  <div class="container">
-    <article id="game-solving-drl">
+  <article id="game-solving-drl">
+    <div class="container">
         <header><h2 style="text-align: center;">Game-Solving DRL An Introductory Literature Survey of the Last Decade & A Critical Methodological Review</header></h2>
         <header><h3 style="text-align: center;">Gonçalo Carvalho, Twan Vos</header></h3>
         <header><h4 style="text-align: center;">2024</header></h4>
@@ -36,19 +36,20 @@
             We review key advancements in DRL, including techniques such as value prediction functions, policy gradients, and model-based learning approaches like MuZero. Our analysis identifies persistent gaps in current methodologies, such as the reliance on handcrafted reward signals and computational inefficiencies. To address these concerns, we propose a recursive decomposition framework in which complex problems are broken down into sub-problems, each mapped onto a DRL solvable structure. We introduce an extended Markov Decision Process (MDP) formulation incorporating intrinsic motivation and goal representations, allowing for reward-free optimization.
             Our results suggest that, if DRL can autonomously learn goal representations and intrinsic reward structures, it may serve as a generalizable tool for problem-solving beyond traditional reinforcement learning applications. However, open questions remain regarding computational feasibility, scalability, and the theoretical limits of game-based problem encoding. We conclude by discussing potential future directions, including the need for improved interpretability and a deeper mathematical foundation for DRL as a general AI paradigm.
         </p>
+        
+        <section id="preprint-display">
+          <h2>Preprint</h2>
+          <p>
+            <strong>Game-Solving DRL: An Introductory Literature Survey of the Last Decade &amp; A Critical Methodological Review</strong><br>
+            Gonçalo Carvalho, Twan Vos &middot; 2024
+          </p>
+          <a href="https://osf.io/preprints/osf/7zmx2_v1" target="_blank">Read Preprint</a>
+        </section>
+      </div>
     </article>
-    
-    <section id="preprint-display">
-      <h2>Preprint</h2>
-      <p>
-        <strong>Game-Solving DRL: An Introductory Literature Survey of the Last Decade &amp; A Critical Methodological Review</strong><br>
-        Gonçalo Carvalho, Twan Vos &middot; 2024
-      </p>
-      <a href="https://osf.io/preprints/osf/7zmx2_v1" target="_blank">Read Preprint</a>
-    </section>
-  </div>
-
 </main>
+
+<p></p>
 <script>
   fetch('footer.html')
     .then(response => response.text())
