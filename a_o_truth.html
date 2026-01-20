@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Gonçalo Hora de Carvalho</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" type="text/css" href='style/style.css'>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <!-- Prism.js for code highlighting -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
-</head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
 </head>
 
 <body>
@@ -17,12 +16,14 @@
   <div id="nav-placeholder"></div>
 
   <script>
+    (function() {
       fetch('nav.html')
-      .then(response => response.text())
-      .then(data => {
+        .then(response => response.text())
+        .then(data => {
           document.getElementById('nav-placeholder').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading nav:', error));
+        })
+        .catch(error => console.error('Error loading nav:', error));
+    })();
   </script>
 
 <main>
@@ -31,7 +32,7 @@
       <header><h2 style="text-align: center;">O-truth: Truth as an Approximation of Observer Models to Real Space Objects</h2></header>
       <header><h4 style="text-align: center;">2023</header></h4>    
       <p>
-        Truth is illusive. Regardless, it is a foundational concept across domains of knowledge, from scientific inquiry to logical reasoning. Traditional definitions often lack the generalizability required to encompass the diversity of opinions encountered in different contexts. This paper introduces a comprehensive mathematical framework aimed at defining truth in a manner that is both generalizable and applicable to a wide range of statements, including empirical scientific truths and abstract logical propositions.
+        Truth is illusive. Regardless, it is a foundational concept across domains of knowledge, from scientific inquiry to logical reasoning. Traditional definitions often lack the generalizability required to encompass the diversity of opinions encountered in different contexts. This paper introduces a mathematical framework aimed at defining truth in a manner that is both generalizable and applicable to a wide range of statements, including empirical scientific truths and abstract logical propositions.
       </p>
       
       <p>
@@ -104,14 +105,16 @@
 </main>
 
 <p></p>
-<script>
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => console.error('Error loading footer:', error));
-</script>
 <div id="footer-placeholder"></div>
+<script>
+  (function() {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  })();
+</script>
 </body>
 </html>
