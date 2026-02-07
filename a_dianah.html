@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" type="text/css" href='style/style.css'>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <script>
+    (function() {
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading nav:', error));
+    })();
+  </script>
+
+<main>
+  <article id="dianah">
+      <div class="container">
+        <header><h2 style="text-align: center;">Exploring Visual Complaints through a Test Battery in Acquired Brain Injury Patients: A Detailed Analysis of the DiaNAH Dataset</h2></header>
+        <header><h3 style="text-align: center;">Gonçalo Hora de Carvalho</h3></header>
+        <header><h4 style="text-align: center;">2025</h4></header>
+        <p>
+            This study investigated visual impairment complaints in a sample of 948 Acquired Brain Injury (ABI) patients using the DiaNAH dataset, emphasizing advanced machine learning techniques for managing missing data. Patients completed a CVS questionnaire capturing eight types of visual symptoms, including blurred vision and altered contrast perception. Due to incomplete data, 181 patients were excluded, resulting in an analytical subset of 767 individuals. To address the challenge of missing data, an automated machine learning (AutoML) approach was employed for data imputation, preserving the distributional characteristics of the original dataset. Patients were grouped according to singular and combined complaint clusters derived from the 40,320 potential combinations identified through the CVS questionnaire. A linear correlation analysis revealed minimal to no direct relationship between patient-reported visual complaints and standard visual perceptual function tests. This study represents an initial systematic attempt to understand the complex relationship between subjective visual complaints and objective visual perceptual assessments in ABI patients. Given the limitations of sample size and variability, further studies with larger populations are recommended to robustly explore these complaint clusters and their implications for visual perception following brain injury.
+        </p>
+        <section id="preprint-display">
+          <h2>Preprint</h2>
+          <p>
+            <strong>Exploring Visual Complaints through a Test Battery in Acquired Brain Injury Patients: A Detailed Analysis of the DiaNAH Dataset</strong><br>
+            Gonçalo Hora de Carvalho; 2025
+          </p>
+          <a href="https://arxiv.org/abs/2504.18540" target="_blank">Read Preprint</a>
+        </section>
+      </div>
+    </article>
+</main>
+
+<p></p>
+<div id="footer-placeholder"></div>
+<script>
+  (function() {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  })();
+</script>
+</body>
+</html>

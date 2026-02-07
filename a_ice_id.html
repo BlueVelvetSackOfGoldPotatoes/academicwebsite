@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" type="text/css" href='style/style.css'>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <script>
+    (function() {
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading nav:', error));
+    })();
+  </script>
+
+<main>
+  <article id="ice-id">
+      <div class="container">
+        <header><h2 style="text-align: center;">ICE-ID: A Novel Historical Census Data Benchmark Comparing NARS against LLMs, &amp; a ML Ensemble on Longitudinal Identity Resolution</h2></header>
+        <header><h3 style="text-align: center;">Gonçalo Hora de Carvalho, Lazar S. Popov, Sander Kaatee, Kristinn R. Thórisson, Tangrui Li, Pétur Húni Björnsson, Jilles S. Dibangoye</h3></header>
+        <header><h4 style="text-align: center;">2025</h4></header>
+        <p>
+            We introduce ICE-ID, a novel benchmark dataset for historical identity resolution, comprising 220 years (1703&ndash;1920) of Icelandic census records. ICE-ID spans multiple generations of longitudinal data, capturing name variations, demographic changes, and rich genealogical links. To the best of our knowledge, this is the first large-scale, open tabular dataset specifically designed to study long-term person-entity matching in a real-world population. We define identity resolution tasks (within and across census waves) with clearly documented metrics and splits. We evaluate a range of methods: handcrafted rule-based matchers, a ML ensemble as well as LLMs for structured data (e.g. transformer-based tabular networks) against a novel approach to tabular data called NARS (Non-Axiomatic Reasoning System) &mdash; a general-purpose AI framework designed to reason with limited knowledge and resources. Its core is Non-Axiomatic Logic (NAL), a term-based logic. Our experiments show that NARS is surprisingly simple and competitive with other standard approaches, achieving SOTA at our task. By releasing ICE-ID and our code, we enable reproducible benchmarking of identity resolution approaches in longitudinal settings and hope that ICE-ID opens new avenues for cross-disciplinary research in data linkage and historical analytics.
+        </p>
+        <section id="preprint-display">
+          <h2>Preprint</h2>
+          <p>
+            <strong>ICE-ID: A Novel Historical Census Data Benchmark Comparing NARS against LLMs, &amp; a ML Ensemble on Longitudinal Identity Resolution</strong><br>
+            Gonçalo Hora de Carvalho, Lazar S. Popov, Sander Kaatee, Kristinn R. Thórisson, Tangrui Li, Pétur Húni Björnsson, Jilles S. Dibangoye; 2025
+          </p>
+          <a href="https://arxiv.org/abs/2506.13792" target="_blank">Read Preprint</a>
+        </section>
+      </div>
+    </article>
+</main>
+
+<p></p>
+<div id="footer-placeholder"></div>
+<script>
+  (function() {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  })();
+</script>
+</body>
+</html>
