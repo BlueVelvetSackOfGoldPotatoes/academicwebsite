@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gonçalo Hora de Carvalho</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" type="text/css" href='style/style.css'>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+</head>
+
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <script>
+    (function() {
+      fetch('nav.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('nav-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading nav:', error));
+    })();
+  </script>
+
+<main>
+  <article id="bioelectric">
+      <div class="container">
+        <header><h2 style="text-align: center;">AI-driven Control of Bioelectric Signalling for Real-time Topological Reorganization of Cells</h2></header>
+        <header><h3 style="text-align: center;">Gonçalo Hora de Carvalho</h3></header>
+        <header><h4 style="text-align: center;">2025</h4></header>
+        <p>
+            Understanding and manipulating bioelectric signaling could present a new wave of progress in developmental biology, regenerative medicine, and synthetic biology. Bioelectric signals, defined as voltage gradients across cell membranes caused by ionic movements, play a role in regulating crucial processes including cellular differentiation, proliferation, apoptosis, and tissue morphogenesis. Recent studies demonstrate the ability to modulate these signals to achieve controlled tissue regeneration and morphological outcomes in organisms such as planaria and frogs. However, significant knowledge gaps remain, particularly in predicting and controlling the spatial and temporal dynamics of membrane potentials (V<sub>mem</sub>), understanding their regulatory roles in tissue and organ development, and exploring their therapeutic potential in diseases. In this work we propose an experiment using Deep Reinforcement Learning (DRL) framework together with lab automation techniques for real-time manipulation of bioelectric signals to guide tissue regeneration and morphogenesis. The proposed framework should interact continuously with biological systems, adapting strategies based on direct biological feedback. Combining DRL with real-time measurement techniques &mdash; such as optogenetics, voltage-sensitive dyes, fluorescent reporters, and advanced microscopy &mdash; could provide a comprehensive platform for precise bioelectric control, leading to improved understanding of bioelectric mechanisms in morphogenesis, quantitative bioelectric models, identification of minimal experimental setups, and advancements in bioelectric modulation techniques relevant to regenerative medicine and cancer therapy. Ultimately, this research aims to utilize bioelectric signaling to develop new biomedical and bioengineering applications.
+        </p>
+        <section id="preprint-display">
+          <h2>Preprint</h2>
+          <p>
+            <strong>AI-driven control of bioelectric signalling for real-time topological reorganization of cells</strong><br>
+            Gonçalo Hora de Carvalho; 2025
+          </p>
+          <a href="https://arxiv.org/abs/2503.13489" target="_blank">Read Preprint</a>
+        </section>
+      </div>
+    </article>
+</main>
+
+<p></p>
+<div id="footer-placeholder"></div>
+<script>
+  (function() {
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  })();
+</script>
+</body>
+</html>
